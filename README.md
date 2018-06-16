@@ -1,7 +1,7 @@
 # CIFAR-10.1
 This repository contains the CIFAR-10.1 dataset, a new test set for CIFAR-10.
-We describe the creation of the dataset in the paper ["Do CIFAR-10 Classifiers Generalize to CIFAR-10?"](https://arxiv.org/abs/1806.00451). 
-These images are a subset of the [TinyImages](http://horatio.cs.nyu.edu/mit/tiny/data/index.html) dataset. 
+We describe the creation of the dataset in the paper ["Do CIFAR-10 Classifiers Generalize to CIFAR-10?"](https://arxiv.org/abs/1806.00451).
+These images are a subset of the [TinyImages](http://horatio.cs.nyu.edu/mit/tiny/data/index.html) dataset.
 
 There are two versions of the CIFAR-10.1 dataset:
 - `default` is the recommended dataset for future experiments and corresponds to the results in Appendix D of our paper.
@@ -15,6 +15,14 @@ The `notebooks` directory contains a short script to browse the CIFAR-10.1 datas
 
 The `code` directory contains a `utils` file to help load the dataset.
 
+To install the dependencies of the notebook and utils, install and activate the
+conda environment:
+
+```bash
+conda env create -f environment.yml
+source activate CIFAR-10.1
+```
+
 To cite this dataset please use both references:
 ```
 @article{recht2018cifar10.1,
@@ -23,13 +31,13 @@ To cite this dataset please use both references:
   year = {2018},
   note = {\url{https://arxiv.org/abs/1806.00451}},
 }
-@article{torralba2008tinyimages, 
-  author = {Antonio Torralba and Rob Fergus and William T. Freeman}, 
-  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title = {80 Million Tiny Images: A Large Data Set for Nonparametric Object and Scene Recognition}, 
-  year = {2008}, 
-  volume = {30}, 
-  number = {11}, 
+@article{torralba2008tinyimages,
+  author = {Antonio Torralba and Rob Fergus and William T. Freeman},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title = {80 Million Tiny Images: A Large Data Set for Nonparametric Object and Scene Recognition},
+  year = {2008},
+  volume = {30},
+  number = {11},
   pages = {1958-1970}
 }
 ```

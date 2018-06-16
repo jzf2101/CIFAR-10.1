@@ -1,0 +1,12 @@
+name: CIFAR-10.1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - jupyter
+  - ipython
+  - numpy
+  - Pillow
+  - matplotlib
+  - ipywidgets
+  - tqdm
